@@ -1,4 +1,6 @@
-.nav ul {
+.nav {
+  
+ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -6,11 +8,11 @@
   background-color: #333;
 }
 
-.nav li {
+li {
   float: left;
 }
 
-.nav li a {
+li a {
   display: block;
   color: white;
   text-align: center;
@@ -18,32 +20,28 @@
   text-decoration: none;
 }
 
-.nav li a:hover:not(.active) {
+li a:hover:not(.active) {
   background-color: #111;
 }
 
-.nav .active {
+.active {
   background-color: #4CAF50;
+}
 }
 
 body {
   padding: 2rem 0;
 }
-
 .contenedor {
   width: 70vw;
   width: clamp(16rem, 90vw, 80rem);
   margin-left: auto;
   margin-right: auto;
 }
-
 .masonry {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(16rem, 1fr))[auto-fill];
-      grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
-  -ms-grid-rows: masonry;
-      grid-template-rows: masonry;
+  grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+  grid-template-rows: masonry;
   grid-gap: 1rem;
   padding: 0;
 }
@@ -55,8 +53,7 @@ body {
 
 img {
   border-radius: 1rem;
-  -webkit-box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
-          box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
   max-width: 100%;
 }
-/*# sourceMappingURL=App.css.map */
+
